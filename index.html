@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebRTC</title>
+</head>
+<body>
+<h1>Bienvenue</h1>
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript">
+    
+    var isWebRTCSupported = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || window.RTCPeerConnection;
+    if (window.navigator.userAgent.indexOf("Edge") > -1) {
+    // Votre navigateur ne prend pas en charge WebRTC
+    alert('Votre navigateur ne prend pas en charge WebRTC');
+    } else if (isWebRTCSupported) {
+    // Votre navigateur prend en charge WebRTC
+    alert('Votre navigateur prend en charge WebRTC');
+    } else {
+    // Votre navigateur ne prend pas en charge WebRTC
+    alert('Votre navigateur ne prend pas en charge WebRTC');
+    }
+
+    </script>
+</body>
+</html>
